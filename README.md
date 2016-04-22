@@ -15,7 +15,10 @@ Well, it's simple, you put your Twilio AccountSID and AuthToken inside of tokens
 development headers installed on your system somewhere.
 
 And then do something like this in your extensions.conf where your calls come in from Twilio (or any other SIP provider for that matter 
-if they don't provide caller names)
+if they don't provide caller names). 
+
+You can also change where the SQLite cache is located inside of twilio-cnam.cpp and the number of seconds the cache'd record is valid for
+the default is 1 week (604800 seconds).
 
 
 ~~~~
