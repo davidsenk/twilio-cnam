@@ -32,7 +32,7 @@ same = n,VoiceMail(${EXTEN:2},u)
 same = n,Hangup()
 ~~~~
 
-### Credits ### 
+### Credits ###
 
 nlohmann for his [excellently simple single file json c++ library](https://github.com/nlohmann/json)
 
