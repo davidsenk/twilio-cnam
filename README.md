@@ -17,9 +17,6 @@ development headers installed on your system somewhere.
 And then do something like this in your extensions.conf where your calls come in from Twilio (or any other SIP provider for that matter 
 if they don't provide caller names). 
 
-You can also change where the SQLite cache is located inside of twilio-cnam.cpp and the number of seconds the cache'd record is valid for
-the default is 1 week (604800 seconds).
-
 
 ~~~~
 [pstn-incoming]
@@ -34,6 +31,10 @@ same = n,Dial(SIP/${EXTEN:2}&Local/incoming@from-internal,30)
 same = n,VoiceMail(${EXTEN:2},u)
 same = n,Hangup()
 ~~~~
+
+You can also change where the SQLite cache is located inside of twilio-cnam.cpp and the number of seconds the cached
+record is valid for the default is 1 week (604800 seconds).
+
 
 ### Credits ###
 
